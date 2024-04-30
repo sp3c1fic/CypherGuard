@@ -1,0 +1,152 @@
+.contact-form {
+    background-color: #0c0c0c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    
+     /* Darken the background */
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    height: 40%;
+    width: 55%;
+    margin:auto;
+    
+}
+
+form {
+    width: 400px;
+    text-align: center;
+    border-right: 2px solid white;
+}
+
+.contact-form.active {
+    display: flex;
+
+
+}
+
+.form-container {
+    /* Existing styles for the form container */
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.contact-info {
+    
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-left: 20px; /* Add some spacing between form and contact info */
+    height: 100%;
+    overflow-y: auto; /* Add scroll if content exceeds max height */
+}
+
+.contact-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin-bottom: 28px;
+    font-weight: bold;
+    color: orange;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: red;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 65%;
+    padding: 10px;
+    border: 2px solid darkorange;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #fdf9f4;
+    color: #060606;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    bottom: 5px;
+
+}
+
+button[type="submit"]:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Add your desired background color and opacity */
+    z-index: 1000; /* Make sure the overlay is above other elements */
+  }
+
+  .contact-info-container {
+    position: relative;
+    top: 10%;
+  }
+
+  .email-span, .address-span, .phone-span {
+    color:#f7f7f7;
+    font-weight: bold;
+  }
+
+  @media screen and (min-width:490px) {
+    
+    .contact-form {
+        width: 800px;
+        height: 450px;
+
+    }
+
+    .contact-info {
+        position: relative;
+        top: 51px;
+    }
+}

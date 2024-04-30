@@ -1,0 +1,125 @@
+.about-ceo-section {
+        padding: 80px 0;
+    text-align: center;
+}
+
+
+
+.about-ceo-section .section-title {
+    font-size: 44px;
+    color: #fff;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.ceo-section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-ceo-section .ceo-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-ceo-section .ceo-image img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.about-ceo-section .ceo-image img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(129, 10, 10, 0.2);
+}
+
+.about-ceo-section .ceo-description {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.about-ceo-section .ceo-description h3 {
+    font-size: 24px;
+    color: crimson;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.about-ceo-section .ceo-description p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fffbfb;
+    margin-bottom: 20px;
+}
+
+.ceo-description span {
+    color: cyan;
+}
+
+.ceo-section-title {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.ceo-description {
+    margin: 0 auto;
+    max-width: 60%;
+}
+
+/* Media Query for Responsiveness */
+@media screen and (max-width: 1080px) {
+    .ceo-section-container {
+        width: 430px;
+        position: relative;
+        right: 4%;
+    }
+
+    .ceo-description p {
+        width: 430px;
+    }
+    .ceo-image {
+        position: relative;
+        left: 15%;
+    }
+
+
+    .ceo-section-title {
+        position: relative;
+        left: 15%;
+
+        font-size: 44px;
+    }
+
+    .about-ceo-section {
+        position: relative;
+        left: 35%
+    }
+}
+
+
+@media screen and (max-width: 490px) {
+    .about-ceo-section {
+        position: relative;
+        margin-left: -20px;
+    }
+
+    .about-ceo-section p {
+        width: 550px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .about-ceo-section {
+        left: 25%;
+    }
+}

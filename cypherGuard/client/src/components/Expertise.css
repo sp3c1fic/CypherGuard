@@ -1,0 +1,186 @@
+h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 44px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+em {
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
+
+span {
+    color: orange;
+}
+
+.description-container {
+    max-width: 800px; /* Adjust the max-width as needed */
+    margin: 0 auto; /* Center align the container */
+  }
+
+.description-container p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+
+.expertise-section {
+    padding: 60px 0;
+  }
+  
+
+  
+  .expertise-section em {
+    color: #FFA500;
+  }
+  
+  .description-container {
+    margin-bottom: 40px;
+  }
+  
+  .description-container p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /* Paragraph Styles */
+  .paragraph-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .paragraph {
+    flex: 1;
+    text-align: center;
+  }
+  
+  /* Circle Progress Styles */
+  .circle-progress {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  
+  .circle-progress-circle {
+    stroke-dasharray: 280;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+  }
+  
+  .circle-progress-value {
+    stroke-dasharray: 292.6;
+    stroke-dashoffset: 292.6;
+    animation: fillAnimation 2s ease forwards; 
+  }
+  
+  .circle-progress-text {
+    font-size: 24px;
+    font-weight: bold;
+    fill: #999;
+  }
+  @keyframes fillAnimation {
+    0% {
+      stroke-dashoffset: 292.6;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  /* Circular Gradient */
+  [role="progressbar"] {
+    --percentage: 0;
+  }
+  
+  .circle-progress-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(
+      at center center,
+      var(--start-color) 0%,
+      var(--end-color) 100%
+    );
+    clip-path: circle(50% at center);
+    opacity: 0.8;
+  }
+
+  .progress-label {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+
+  @media screen and (max-width: 1080px) {
+    .container {
+      margin: 0 auto !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      position: relative !important;
+      left: 51% !important;
+      width: 100%;
+    }
+
+    .paragraph-container {
+      margin: 0 10px !important;
+      display: flex;
+      justify-content: center !important;
+      align-items: center;
+      position: relative;
+      left: 40%;
+      width: 100%;
+    }
+
+    .paragraph {
+      max-width: calc(50% - 20px) !important;
+    }
+
+    .progress-label {
+      font-size: 15px;
+      text-align: center !important;
+      position: relative;
+      left: 23%;
+    }
+
+    .circle-progress {
+      margin-left: 15px !important;
+    }
+  }
+
+  @media screen and (max-width: 490px) {
+    .expertise-section {
+      position: relative;
+      left: -95px;
+    }
+
+    .paragraph-container {
+      position: relative;
+      left: 275px;
+    }
+    
+  }
+
+  @media screen and (max-width: 720px) {
+    .container {
+      margin-left: 110px !important;
+    }
+
+    .paragraph-container {
+      left: 250px;
+    }
+  }

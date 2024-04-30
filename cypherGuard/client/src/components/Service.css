@@ -1,0 +1,214 @@
+.service-section {
+    padding: 50px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #535353;
+    text-transform: uppercase;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card {
+    flex-basis: calc(20% - 20px); /* Adjust width based on your preference */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: 2px solid black;
+    background-color: #090909;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 99, 71, 0.3);
+}
+
+.service-icon {
+    font-size: 36px;
+    color: #0077cc; /* Icon color */
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333; /* Title color */
+}
+
+p {
+    font-size: 14px;
+    color: #777; /* Text color */
+}
+
+.lock-icon, .cyber-icon, .bug-icon {
+    width: 70px; /* Adjust the width to your preferred size */
+    height: 70px; /* Adjust the height to maintain the aspect ratio */
+}
+
+
+
+.service-title {
+    text-align: center;
+    font-size: 28px; /* Set the font size to 28px */
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700; /* Set the font weight to 400 for normal */
+    color: #fff
+}
+
+.section-sub-title {
+    text-align: center;
+    font-size: 44px;
+}
+
+ul {
+    list-style-type: none; /* Add bullet points for each list item */
+    padding-left: 20px; /* Add padding to the left of the list */
+}
+
+li {
+    margin-bottom: 10px; /* Add margin below each list item to create space */
+    color: #777;
+    position: relative;
+    padding-left: 20px;
+}
+
+.checkmark-icon {
+    position: absolute; /* Position the icon absolutely */
+    left: 0; /* Place the icon on the left side */
+    width: 16px; /* Set the width of the icon */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 2px; /* Add some spacing between icon and text */
+}
+
+.sub-description {
+    text-align: center;
+    margin: auto;
+    width: 40%;
+    font-size: 16px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+
+.service-description {
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+}
+.tell-me-more-button {
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 0 0 0 0 transparent; /* No initial shadow */
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+.tell-me-more-button:hover {
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.7);
+}
+  .button-container {
+    position: relative;
+    /*just this value to control the distance from the bottom */
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    top: 20px;
+  }
+
+  @media screen and (max-width: 1080px) {
+    .service-cards {
+        display: grid;
+        position: relative;
+        width:100%;
+        
+    }
+
+    .service-card {
+        width: 370px;
+        position: relative;
+        left: 30%;
+    }
+
+    .section-title {
+        position: relative;
+        left: 85% !important;
+        width: 30%;
+
+    }
+    
+    .sub-description {
+        font-size: 25px;
+        width: 100%;
+        position: relative;
+        left: 52%;
+    }
+
+    .section-sub-title {
+        position: relative;
+        left: 50% !important;
+    }
+
+    .button-container {
+        position: relative;
+        left: 53%;
+    }
+  }
+
+  @media screen and (max-width: 490px) {
+    .service-section {
+        position: relative;
+        left: -100px;
+    }
+     .service-cards {
+        position: relative;
+        left: 20px !important;
+    } 
+    .section-sub-title {
+        margin-left: 20px;
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    .service-card {
+        position: relative;
+        margin-left: 170px !important;
+    }
+
+    .section-title {
+        margin-left: 130px;;
+    }
+    .sub-description {
+        margin-left: 110px;
+    }
+
+    .services-content-container h1 {
+        text-align: center;
+        position: relative;
+        left: 280px !important;
+    }
+
+    .tell-me-more-button {
+        position: relative;
+        left: 30% !important;
+        margin: 0 auto
+    }
+  }

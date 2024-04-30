@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Bayon&family=Chakra+Petch&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* Black background */
+  color: #fff; /* Text color */
+}
+
+nav {
+  position: relative;
+  top: 15px;
+}
+
+/* Style navigation menu */
+nav ul {
+  list-style: none;
+  display: flex;/* Dark background */
+  padding: 1rem 0;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Style hero section */
+.hero {
+  text-align: center;
+  padding: 5rem 0;
+  background-color: #8B0000; /* Crimson background */
+  color: #fff;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #e74c3c; /* Slightly darker crimson for the button */
+  color: #fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Style game cards */
+.games {
+  padding: 3rem 0;
+  text-align: center;
+  background-color: #000; /* Black background */
+}
+
+.game-card {
+  background-color: #333; /* Darker background */
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style footer */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #111; /* Dark background */
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  background-color: #010101;
+  color: #fff;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.5s ease-in-out forwards; /* Apply the animation */
+
+
+}
+
+/* Style navigation menu */
+.header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.header nav li {
+  margin: 0 1rem;
+}
+
+.header nav a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  transition: color 0.3s ease; /* Add a smooth text color transition */
+  position: relative; /* Add a relative position for pseudo-element */
+}
+
+.header nav a:hover {
+  color: #FFA500; /* Change the text color on hover */
+}
+
+/* Add an underline pseudo-element */
+.header nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px; /* Set the height of the underline */
+  background: #FFA500; /* Set the underline color */
+  transform: scaleX(0); /* Initially scale the underline to 0 width */
+  transform-origin: center; /* Scale from the center */
+  transition: transform 0.3s ease; /* Add a smooth underline animation */
+}
+
+.header nav a:hover::after {
+  transform: scaleX(1); /* Scale the underline to full width on hover */
+}
+
+.header.hidden {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.nav-right {
+  display: flex;  
+  align-items: center;
+  justify-content: flex-end; /* Align items to the right corner */
+  flex-grow: 1; /* Allow the right div to take up remaining space */
+  max-width: 100%; /* Limit the width of the right div */
+  position: relative;
+  right: 35px;
+}
+.nav-button.login-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px; /* Adjust padding to make the button larger */
+  border: 2px solid transparent; /* Add a transparent border */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+
+  /* Gradient border (dark orange to black) */
+  background-image: linear-gradient(to left, #FFA500, #d0c7c7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  border-radius: 5px;
+  /* Button text style */
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-button.login-btn:hover {
+  border-color: #FFA500; /* Change border color on hover */
+  color: white; /* Change text color to white on hover for visibility */
+
+}
+
+.search:hover, .message:hover {
+  color: crimson; /* Change the color on hover */
+}
+
+::selection {
+  background-color: orange; /* Change the selection background color to orange */
+  color: white; /* Change the text color inside the selection */
+}
+
+
+/* Apply the hover effect to buttons */
+
+.cyber-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-container {
+  display: flex !important;
+  align-items: center !important;
+  text-align: center !important;
+  justify-content:  center !important;
+  position: relative;
+  flex-direction: row;
+  bottom: 6px;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.logo-container h4 {
+  font-size:  35px;
+  margin: 0 auto;
+  padding: 10px;
+  text-transform: uppercase;
+  color: cyan;
+  font-family: 'Bayon', sans-serif;
+  font-family: 'Chakra Petch', sans-serif;
+
+}
+
+.App.overlay::before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.form-container {
+  position: fixed;
+  top: 50%; /* Adjust as needed */
+  left: 50%; /* Adjust as needed */
+  transform: translate(-50%, -50%); /* Center the form vertically and horizontally */
+  z-index: 1001; /* Ensure the form appears above the overlay */
+  /* Additional styling for the form container */
+}
+
+.close-btn-icon {
+  color: orange;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 1080px) {
+  /* Responsive styles for screens up to 768px wide */
+
+
+
+
+  .heor-content p {
+    width: 400px;
+    position: relative;
+    right: 200px;
+  }
+
+  .header h4 {
+    font-size: 14px;
+  }
+
+  .mobile-classname {
+    position: relative;
+    right: 20%;
+  }
+
+  .nav-button.login-btn {
+    position: relative;
+    left: 10%;
+    top: 4%;
+  }
+
+  .header nav ul {
+    position: relative;
+    right: 17%!important;
+    bottom: 4%;
+  }
+
+  .logo-container {
+
+    bottom: 15%;
+    margin-left: -13px;
+  }
+
+}
+
+@media screen and (max-width: 490px) {
+  .logo-container {
+    margin-left: 25px;
+  }
+
+  .login-btn {
+    position: relative;
+    left: 45px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .logo-container {
+      left: 45% !important;
+      top: 15px;
+  }
+
+  .header nav ul {
+    margin-left: 20px;
+  }
+
+  .mobile-classname {
+    right: 30px;
+  }
+}

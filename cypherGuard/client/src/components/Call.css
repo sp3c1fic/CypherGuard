@@ -1,0 +1,91 @@
+
+.call-section {
+    background-color: rgba(12, 12, 12, 0.591);
+    height: 400px;
+    margin-top: 150px;
+}
+
+.call-section-paragraph {
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    font-size: 20px;
+    width: 70%;
+    margin:auto
+}
+
+.call-span {
+    text-decoration: underline;
+    text-decoration-color: #FFA500;
+}
+
+.call-content {
+    position: relative;
+    top: 25%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.call-over-title {
+    text-transform: uppercase;
+
+    font-size: 18px;
+    color: grey;
+}
+
+.call-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid transparent; /* Start with a transparent border */
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease, border 0.3s ease; /* Add smooth color and border transitions */
+    border-radius: 6px;
+    font-size: 32px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    top: 20px;
+    margin: auto;
+    border: 1px solid #ff9203;
+    font-weight: 700;
+  }
+  
+  .call-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right, #FFA500, #ff9203);
+    z-index: -1;
+    transition: width 0.3s ease; /* Add smooth width transition for the border */
+  }
+  
+  .call-button:hover {
+    color: #070707; /* Change text color on hover */
+    border: 2px solid transparent; /* Reset the border to transparent */
+    border: 1px solid #ff9203;
+    cursor: pointer;
+  }
+  
+  .call-button:hover::before {
+    width: 100%; /* Expand the border to 100% width on hover */
+  }
+  
+
+  @media screen and (max-width: 1080px) {
+    .call-section {
+      width:600px;
+      height: 500px;
+      padding: 50px;
+    }
+
+    .call-section div {
+      position: relative;
+      top: -10px !important;
+    }
+  }

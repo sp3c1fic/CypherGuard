@@ -1,0 +1,148 @@
+.hero {
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: space-between; /* Space between content */
+    padding: 50px; /* Adjust as needed */
+    background-color: transparent; /* Background color for the hero section */
+    margin-top: 100px
+  }
+  
+  /* Styles for the left side content */
+  .hero-content {
+    flex: 1; /* Occupy available space */
+  }
+  
+  .hero-content h1 {
+    font-size: 36px; /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust as needed */
+    color: #fff; /* Text color for the heading */
+    font-family: Arial, sans-serif;
+  }
+  
+  .hero-content p {
+    font-size: 18px; /* Adjust as needed */
+    margin-bottom: 30px; /* Adjust as needed */
+    color: #777; /* Text color for the paragraph */
+    text-align: center;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid transparent; /* Start with a transparent border */
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease, border 0.3s ease; /* Add smooth color and border transitions */
+    border-radius: 6px;
+    font-size: 32px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right, #ffb62f, #fcc50f);
+    z-index: -1;
+    transition: width 0.3s ease; /* Add smooth width transition for the border */
+  }
+  
+  .cta-button:hover {
+    color: #242323; /* Change text color on hover */
+    border: 2px solid transparent; /* Reset the border to transparent */
+  }
+  
+  .cta-button:hover::before {
+    width: 100%; /* Expand the border to 100% width on hover */
+  }
+  
+  /* Styles for the right side image */
+  .hero-image {
+    flex: 1; /* Occupy available space */
+    text-align: right; /* Align the image to the right */
+  }
+  
+  .hero-image img {
+    max-width: 100%; /* Ensure the image stays within its container */
+    height: auto;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ff9800; /* Add an orange border */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4); /* Adjust the shadow */
+    border-radius: 15px; /* Add rounded corners */
+    transition: box-shadow 0.3s ease; /* Add a subtle transform effect on hover */
+}
+
+.hero-image:hover {
+    transform: scale(1.05); /* Enlarge the image slightly on hover */
+    box-shadow: 0px 4px 6px rgba(255, 140, 0, 0.5);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Add display block to remove any extra spacing */
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+.hero-title {
+    font-size: 24px;
+    color: #FFA500; /* Orange color */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Add smooth transitions */
+  }
+  
+  .hero-title .highlighted-text {
+    text-decoration: underline; /* Underline for "Online Threats" */
+    text-decoration-color: #FFA500; /* Orange color for the underline */
+    text-decoration-thickness: 2px; /* Adjust the thickness of the underline */
+    -webkit-user-select: all; /* Enable highlighting for the entire text */
+    -moz-user-select: all;
+    -ms-user-select: all;
+    user-select: all;
+  }
+  
+  .hero-title:hover {
+    color: #FFA500; /* Orange color when hovered */
+    text-decoration: underline; /* Underline when hovered */
+  }
+
+  @media (max-width: 992px) {
+
+    .hero {
+      /* Adjust styles for smaller screens */
+      display: block !important;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      left: 35%;
+    }
+
+    .hero-image, .hero-image img {
+      width: 900px;
+    }
+  
+  }
+
+  @media screen and (max-width: 490px) {
+    .hero {
+      position: relative;
+      top: 50px;
+      left: 70px;
+      width: 500px;
+    }
+
+    
+  }
