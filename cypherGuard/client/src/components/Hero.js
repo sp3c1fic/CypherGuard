@@ -30,7 +30,7 @@ const Hero = () => {
           {showContactForm && <ContactForm />}
           {isLoading && <LoadingSpinner />}
           <div className="hero-image">
-              <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.hst.world%2Fwp-content%2Fuploads%2F2021%2F01%2FECP_VV_Safety_12fps_2_3.gif&f=1&nofb=1&ipt=8a5004a6ec8ed3fd912b9ce82ace05136a1be608e08fbbad118733b0e424d7f4&ipo=images" alt="phishing" />
+              <img src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-391777,resizemode-75,msid-93665813/prime/prime-vantage/i-thought-i-wouldnt-fall-for-phishing-and-then-i-did-.jpg" alt="phishing" />
           </div>
       </section>
   );

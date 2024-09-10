@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0166e053.css",
+    "main.js": "/static/js/main.e0b15945.js",
+    "static/media/ceo_modified.png": "/static/media/ceo_modified.1b849919eeaf75828726.png",
+    "static/media/hacker-skull.png": "/static/media/hacker-skull.397a81b0c9c343906866.png",
+    "static/media/bug-catcher.png": "/static/media/bug-catcher.336c191841b50c33f71b.png",
+    "static/media/cyber-security.png": "/static/media/cyber-security.5c78cb80c11bc803a84d.png",
+    "static/media/001-three.png": "/static/media/001-three.f5867bf8b5b7de1b9442.png",
+    "static/media/002-two.png": "/static/media/002-two.74e889c7a3f01b89eb69.png",
+    "static/media/de-handelsblad.png": "/static/media/de-handelsblad.59beaa975079da6bb65f.png",
+    "static/media/mollie-logo.png": "/static/media/mollie-logo.e4211ed29ac7ff3e7235.png",
+    "static/media/004-number-four.png": "/static/media/004-number-four.2d8445301ae5b74d4f59.png",
+    "static/media/003-number-one.png": "/static/media/003-number-one.26a1b265f00b85b796ca.png",
+    "static/media/adyen-logo.png": "/static/media/adyen-logo.bd607f875a31e1b2b503.png",
+    "static/media/phishing.png": "/static/media/phishing.edfd8f8848daa43d5965.png",
+    "index.html": "/index.html",
+    "main.0166e053.css.map": "/static/css/main.0166e053.css.map",
+    "main.e0b15945.js.map": "/static/js/main.e0b15945.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0166e053.css",
+    "static/js/main.e0b15945.js"
+  ]
+}
